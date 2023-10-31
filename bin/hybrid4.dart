@@ -15,9 +15,9 @@ void main() async {
             'UserId: ${user['uid']}, First Name: ${user['first_name']}, Last Name: ${user['last_name']}');
       }
     } else {
-      print('Failed to load user data');
+      print('Could not load user data, maybe the fetch failed?');
     }
   } catch (e) {
-    print('Error occurred: $e');
+    print('Error: $e');
   }
 }
