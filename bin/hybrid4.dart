@@ -11,8 +11,9 @@ void main() async {
       List<dynamic> users = jsonDecode(response.body);
 
       for (var user in users) {
-        print(
-            'UserId: ${user['uid']}, First Name: ${user['first_name']}, Last Name: ${user['last_name']}');
+        print("UserId: ${user['uid']}");
+        print("First Name: ${user['first_name']}");
+        print("Last Name: ${user['last_name']}");
       }
     } else {
       print('Could not load user data, maybe the fetch failed?');
